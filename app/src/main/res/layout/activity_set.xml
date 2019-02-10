@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_set_buka"
+        android:layout_width="52dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn_set_lokasi"
+        android:layout_marginBottom="222dp"
+        android:text="SET"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_simpan_pengaturan"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/swt_aktif"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="57dp"
+        android:drawableBottom="@android:color/holo_blue_dark"
+        android:text="Simpan"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView32"
+        android:layout_marginTop="62dp"
+        android:text="Atur Lokasi"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView29"
+        android:layout_marginTop="88dp"
+        android:text="Mengatur Lokasi Tempat Tambal Ban"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView29"
+        android:layout_marginTop="158dp"
+        android:text="Matikan Lokasi"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="197dp"
+        android:text="Berfungsi untuk mematikan lokasi tempat tambal ban secara langsung tanpa menunggu waktu tutup dari jam operasional"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_set_buka"
+        android:layout_alignStart="@+id/textView29"
+        android:text="Waktu Buka"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView29"
+        android:layout_marginBottom="177dp"
+        android:text="Waktu Tutup"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_set_lokasi"
+        android:layout_width="52dp"
+        android:layout_height="34dp"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="49dp"
+        android:text="SET"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_set_tutup"
+        android:layout_width="49dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/textView34"
+        android:layout_alignStart="@+id/btn_set_buka"
+        android:text="SET"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="112dp"
+        android:layout_toStartOf="@+id/btn_simpan_pengaturan"
+        android:text="LAT" />
+
+    <TextView
+        android:id="@+id/txLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_simpan_pengaturan"
+        android:layout_alignTop="@+id/txLat"
+        android:text="LANG" />
+
+    <ImageView
+        android:id="@+id/img_lihat_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_set_tutup"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_action_name" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_simpan_pengaturan"
+        android:layout_below="@+id/img_lihat_profil"
+        android:text="Lihat Profil" />
+
+    <TextView
+        android:id="@+id/txtbuka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_set_buka"
+        android:layout_toStartOf="@+id/btn_simpan_pengaturan" />
+
+    <TextView
+        android:id="@+id/txttutup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_set_waktu"
+        android:layout_alignTop="@+id/textView34" />
+
+    <Switch
+        android:id="@+id/swt_aktif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView31"
+        android:layout_marginEnd="40dp"
+        android:text="Mati" />
+
+</RelativeLayout>
